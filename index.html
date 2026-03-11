@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<title>Juego de Memoria</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+
+<button onclick="mostrar('inicio')">Inicio</button>
+<button onclick="mostrar('instrucciones')">Instrucciones</button>
+<button onclick="mostrar('juego')">Juego</button>
+<button onclick="verResultado()">Resultados</button>
+
+</nav>
+
+<section id="inicio" class="pagina">
+
+<h1>Juego de Memoria</h1>
+
+<h3>Escoge el nivel</h3>
+
+<button onclick="iniciarJuego('facil')">Fácil</button>
+<button onclick="iniciarJuego('medio')">Medio</button>
+<button onclick="iniciarJuego('dificil')">Difícil</button>
+
+</section>
+
+<section id="instrucciones" class="pagina">
+
+<h2>Objetivo</h2>
+<p>Encuentra todos los pares antes de que se acabe el tiempo.</p>
+
+</section>
+
+<section id="juego" class="pagina">
+
+<h2 id="tiempo">Tiempo:</h2>
+
+<div id="tablero" class="tablero"></div>
+
+</section>
+
+<section id="resultado" class="pagina">
+
+<h1 id="mensajeFinal"></h1>
+
+<button onclick="mostrar('inicio')">Volver al inicio</button>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
